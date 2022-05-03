@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/usr/local/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-g",
+      "-I",
+      "include/",
+      "-I",
+      "include/themes/",
+      "dracula.cpp"
+    ],
+    "directory": "/usr/home/levi/Desktop/HTG",
+    "file": "/usr/home/levi/Desktop/HTG/dracula.cpp"
+  }
+]
