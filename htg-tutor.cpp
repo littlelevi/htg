@@ -6,7 +6,7 @@ int main () {
 // ============================== Usage ==============================
 // Every variable coresponds to helix element hierarchy.
 // To Style element use its name and  replace '.' with '_'
-// Some variables must have at the floor because they are language registered names.
+// Some variables must have '_' at end the because they are language registered names.
 // ===================================================================
 // Defining colors
 // ===================================================================
@@ -20,14 +20,14 @@ string black = "#000000";
 // This Will print comment
 printComment("=== Using Variable and strings ===");
 
-markup_heading_1("#ffffff");  // ==> "string" = {fg = "#ffffff"}
-markup_heading_2(white);      // ==> "string" = {fg = "#ffffff"}
+markup_heading_1("#ffffff");  
+markup_heading_2(white);
 
-markup_heading_3("#ffffff", "#ffffff");  // ==> "string" = {fg = "#ffffff", bg = "#ffffff"}
-markup_heading_4(white, black);          // ==> "string" = {fg = "#ffffff", bg = "#000000"}
-
-markup_heading_5(make_pair(white, white)); // ==> "string" = {fg = "#ffffff", bg = "#ffffff"}
-
+markup_heading_3("#ffffff", "#ffffff");
+markup_heading_4(white, black);
+  
+markup_heading_5(make_pair(white, white));
+  
 // ===================================================================
 // Valid modifiers
 // ===================================================================
@@ -49,8 +49,8 @@ mod::crossed_out
 
 printComment("=== Using style modifier ===");
 
-markup_normal(white, {mod::bold});                   // ==> "string" = {fg = "#ffffff", bg = "#000000", modifiers = ["bold"]}
-markup_normal_completion(white, white, {mod::dim});  // ==> "string" = {fg = "#ffffff", modifiers = ["bold", "dim"]}
+markup_normal(white, {mod::bold});
+markup_normal_completion(white, white, {mod::dim});
 
 // ============================== Best Practices==============================
 //
