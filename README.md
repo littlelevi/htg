@@ -33,13 +33,13 @@ string black = "#000000";
 ## Using variables and strings
 
 ```
-markup_heading_1("#ffffff");  // ==> "string" = {fg = "#ffffff"}
-markup_heading_2(white);      // ==> "string" = {fg = "#ffffff"}
+markup_heading_1("#ffffff");
+markup_heading_2(white);
 
-markup_heading_3("#ffffff", "#ffffff");  // ==> "string" = {fg = "#ffffff", bg = "#ffffff"}
-markup_heading_4(white, black);          // ==> "string" = {fg = "#ffffff", bg = "#000000"}
+markup_heading_3("#ffffff", "#ffffff");
+markup_heading_4(white, black);
 
-markup_heading_5(make_pair(white, white)); // ==> "string" = {fg = "#ffffff", bg = "#ffffff"}
+markup_heading_5(make_pair(white, white));
 ```
 
 ## Valid modifiers
@@ -59,8 +59,8 @@ mod::crossed_out
 ## Using style modifiers
 
 ```
-markup_normal(white, {mod::bold}); // ==> "string" = {fg = "#ffffff", bg = "#000000", modifiers = ["bold"]}
-markup_normal_completion(white, white, {mod::dim, mod::italic});  // ==> "string" = {fg = "#ffffff", modifiers = ["bold", "dim"]}
+markup_normal(white, {mod::bold});
+markup_normal_completion(white, white, mod::dim, mod::italic}); 
 ```
 
 ## Best Practices
